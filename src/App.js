@@ -8,6 +8,16 @@ function App() {
       <header className="App-header">
         LOGIN 
       </header>
+      <br></br>
+      <p className="InputLogin">Usuário:</p>
+      <input type="text" className="input"></input>
+      <p className="InputLogin">Senha:</p>
+      <input type="password" className="input"></input>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <button className="button" >ENTER</button>
     </div>
   );
 }
