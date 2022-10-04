@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import styles from "../components/layout/Menu.module.css"
+
 function Menu(){
     return (
         <menu className="App">
