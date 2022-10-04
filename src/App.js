@@ -1,24 +1,17 @@
 import logo from './Grupo3.png';
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import './App.css';
+import Menu from './pages/Menu';
+import Login from './pages/Login';
 
 function App() {
   return (
-    <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
-      <header className="App-header">
-        LOGIN 
-      </header>
-      <br></br>
-      <p className="InputLogin">Usuário:</p>
-      <input type="text" className="input"></input>
-      <p className="InputLogin">Senha:</p>
-      <input type="password" className="input"></input>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <button className="button" >ENTER</button>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Login/>}/>
+        <Route path="/menu" element={<Menu/>}/>
+      </Routes>
+    </Router>
   );
 }
 
