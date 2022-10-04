@@ -10,7 +10,6 @@ html, body, ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: white; */
     padding: 1em;
 }
 
@@ -28,7 +27,7 @@ html, body, ul {
     list-style-type: none;
     box-sizing: border-box;
     height: 50%;
-    padding: 20px 30px 5px 30px;
+    padding: 25px 10px 5px 30px;
 }
 
 .item a{
@@ -46,6 +45,6 @@ html, body, ul {
     width: 400px;
     height: 50px;
     margin-top: -43px;
-    margin-left: -30px;
+    margin-left: -45px;
     border: solid 2px rgb(68, 68, 68);
 }

@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import styles from "../components/layout/Menu.module.css"
+import Cadastrar from './Cadastrar';
 
 function Menu(){
     return (
@@ -36,6 +37,9 @@ function Menu(){
                     </li>
                 </ul>
             </div>
+            <Routes>
+                <Route path="/cadastrar" element={<Cadastrar/>}/>
+            </Routes>
         </menu>
     )
 }

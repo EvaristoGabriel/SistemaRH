@@ -6,7 +6,7 @@ body {
   height: 50px;
   position: absolute;
   right: 0;
-  top:0;
+  top:-7%;
 }
 .App-header {
   min-height: 10vh;
