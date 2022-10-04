@@ -1,11 +1,9 @@
-import logo from '../Grupo3.png';
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Menu from './Menu';
 
 function Login(){
     return (
     <div className="App">
-        <img src={logo} className="App-logo" alt="logo" />
         <header className="App-header">
         LOGIN 
         </header>

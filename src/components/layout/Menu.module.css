@@ -1,0 +1,52 @@
+html, body, ul {
+    position: relative;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+    padding: 1em;
+}
+
+.list{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    box-sizing: border-box;
+    height: 25%;
+    padding-left: 40%;
+}
+
+.item {
+    display: block;
+    list-style-type: none;
+    align-items: center;
+    box-sizing: border-box;
+    height: 50%;
+    padding: 20px 30px 5px 30px;
+}
+
+.item a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.item a:hover{
+    color: blueviolet;
+}
+
+.retangulo {
+    background: rgb(240, 112, 172);
+    width: 400px;
+    height: 50px;
+    margin-top: -43px;
+    margin-left: -30px;
+    border: solid 2px rgb(68, 68, 68);
+}

@@ -7,6 +7,7 @@ import Login from './pages/Login';
 function App() {
   return (
     <Router>
+      <img src={logo} className="App-logo" alt="logo" />
       <Routes>
         <Route exact path="/" element={<Login/>}/>
         <Route path="/menu" element={<Menu/>}/>
