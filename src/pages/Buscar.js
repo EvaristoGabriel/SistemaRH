@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import styles from "../components/layout/Menu.module.css"
+import styles from "../components/layout/Buscar.module.css"
 
 function Buscar(){
     return (
@@ -8,8 +8,8 @@ function Buscar(){
                 Buscar 
             </header>
             <br></br>
-            <div class={styles.menu}>
-                <ul class ={styles.list}>
+            <div className={styles.menu}>
+                <ul className ={styles.list}>
                 </ul>
             </div>
         </div>

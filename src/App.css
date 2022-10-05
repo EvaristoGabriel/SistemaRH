@@ -1,12 +1,12 @@
 body {
-  background: linear-gradient(90deg,#05d63a 0%, #2ff1f8 100%);
+  background: linear-gradient(90deg,#aaaaaa 0%, #666666 100%);
 }
 
 .App-logo {
   height: 50px;
   position: absolute;
   right: 0;
-  top:-7%;
+  top: 0;
 }
 .App-header {
   min-height: 10vh;

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import styles from "../components/layout/Menu.module.css"
+import styles from "../components/layout/Analisar.module.css"
 
 function Analisar(){
     return (
@@ -8,8 +8,8 @@ function Analisar(){
                 Analisar 
             </header>
             <br></br>
-            <div class={styles.menu}>
-                <ul class ={styles.list}>
+            <div className={styles.menu}>
+                <ul className ={styles.list}>
                 </ul>
             </div>
         </div>
