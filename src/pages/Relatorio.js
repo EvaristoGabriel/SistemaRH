@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom"
 import styles from "../components/layout/Relatorio.module.css"
+import styleButton from "../components/layout/StyleButton.module.css"
+import { Button } from "@mui/material"
 
-function Relatorio(){
+function Relatorio() {
     return (
         <relatorio className="App">
             <header className="App-header">
-                Relatório 
+                Relatório
             </header>
             <br></br>
             <h2 className={styles.h2}>
@@ -53,7 +55,8 @@ function Relatorio(){
                     <p className={styles.text}>Tudo</p>
                 </label> <br></br>
             </div>
-            <button class={styles.button}>Gerar Relatório</button>
+            <button class={styleButton.button}>Gerar Relatório</button>
+            <Button class={styleButton.button} href="/menu" size="medium">Voltar</Button>
         </relatorio>
     )
 }

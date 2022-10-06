@@ -1,16 +1,17 @@
+import { Button } from "@mui/material"
 import { Link } from "react-router-dom"
 import styles from "../components/layout/Excluir.module.css"
+import styleButton from "../components/layout/StyleButton.module.css"
 
-function Excluir(){
+function Excluir() {
     return (
         <div className="App">
             <header className="App-header">
-                Excluir 
+                Excluir
             </header>
             <br></br>
             <div className={styles.menu}>
-                <ul className ={styles.list}>
-                </ul>
+            <Button class={styleButton.button} href="/menu" size="medium">Voltar</Button>
             </div>
         </div>
     )
