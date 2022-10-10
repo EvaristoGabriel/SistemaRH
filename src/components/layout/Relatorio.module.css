@@ -63,12 +63,12 @@ ul.checkbox li {
     margin-top: -0.001px;
 }
 
-.checkbox {
+/* .checkbox {
     display: block;
     width: inherit;
     height: inherit;
     border: 3px solid #fff;
     border-radius: 6px;
     transition: all 0.37s;
-}
+} */
 

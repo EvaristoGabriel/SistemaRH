@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import styles from "../components/layout/Relatorio.module.css"
 import styleButton from "../components/layout/StyleButton.module.css"
 import { Button } from "@mui/material"
+import styleBotaoCheck from "../components/layout/BotaoCheck.module.css"
 
 function Relatorio() {
     return (
@@ -15,43 +16,43 @@ function Relatorio() {
             </h2>
             <div className={styles.menu}>
                 <label className={styles.label}>
-                    <input className={styles.input} type="checkbox"></input>
-                    <span className={styles.checkbox}></span>
+                    <input className={styleBotaoCheck.input} type="checkbox"></input>
+                    <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Nome</p>
                 </label> <br></br>
                 <label className={styles.label}>
-                    <input className={styles.input} type="checkbox"></input>
-                    <span className={styles.checkbox}></span>
+                    <input className={styleBotaoCheck.input} type="checkbox"></input>
+                    <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>CPF</p>
                 </label><br></br>
                 <label className={styles.label}>
-                    <input className={styles.input} type="checkbox"></input>
-                    <span className={styles.checkbox}></span>
+                    <input className={styleBotaoCheck.input} type="checkbox"></input>
+                    <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Cargo</p>
                 </label><br></br>
                 <label className={styles.label}>
-                    <input className={styles.input} type="checkbox"></input>
-                    <span className={styles.checkbox}></span>
+                    <input className={styleBotaoCheck.input} type="checkbox"></input>
+                    <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Salário</p>
                 </label><br></br>
                 <label className={styles.label}>
-                    <input className={styles.input} type="checkbox"></input>
-                    <span className={styles.checkbox}></span>
+                    <input className={styleBotaoCheck.input} type="checkbox"></input>
+                    <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Sexo</p>
                 </label><br></br>
                 <label className={styles.label}>
-                    <input className={styles.input} type="checkbox"></input>
-                    <span className={styles.checkbox}></span>
+                    <input className={styleBotaoCheck.input} type="checkbox"></input>
+                    <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>E-mail</p>
                 </label> <br></br>
                 <label className={styles.label}>
-                    <input className={styles.input} type="checkbox"></input>
-                    <span className={styles.checkbox}></span>
+                    <input className={styleBotaoCheck.input} type="checkbox"></input>
+                    <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Data de Nascimento</p>
                 </label> <br></br>
                 <label className={styles.label}>
-                    <input className={styles.input} type="checkbox"></input>
-                    <span className={styles.checkbox}></span>
+                    <input className={styleBotaoCheck.input} type="checkbox"></input>
+                    <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Tudo</p>
                 </label> <br></br>
             </div>

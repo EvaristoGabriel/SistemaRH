@@ -18,11 +18,11 @@ function Menu() {
                         <div className={styles.retangulo}></div>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/excluir"> Excluir Funcionário</Link>
+                        <Link to="/buscar"> Excluir Funcionário</Link>
                         <div className={styles.retangulo}></div>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/editar"> Editar Funcionário</Link>
+                        <Link to="/buscar" params={{link: "editar"}}> Editar Funcionário</Link>
                         <div className={styles.retangulo}></div>
                     </li>
                     <li className={styles.item}>
@@ -30,7 +30,7 @@ function Menu() {
                         <div className={styles.retangulo}></div>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/analisar"> Analisar Folga</Link>
+                        <Link to="/buscar"> Analisar Folga</Link>
                         <div className={styles.retangulo}></div>
                     </li>
                     <li className={styles.item}>
