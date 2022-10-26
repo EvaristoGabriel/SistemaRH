@@ -1,5 +1,6 @@
 body {
-  background: linear-gradient(90deg,#05d63a 0%, #2ff1f8 100%);
+  /* background: linear-gradient(90deg,#05d63a 0%, #2ff1f8 100%); */
+  background-color: rgb(190,190,190);
 }
 
 .App-logo {
