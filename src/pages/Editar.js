@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom"
-import styles from "../components/layout/Menu.module.css"
+import styles from "../components/layout/Editar.module.css"
+import { Button } from "@mui/material"
+import styleButton from "../components/layout/StyleButton.module.css"
+import Buscar from "./Buscar"
 
-function Editar(){
+function Editar() {
     return (
         <div className="App">
+            <Buscar/>
             <header className="App-header">
-                Editar 
+                Editar
             </header>
             <br></br>
-            <div class={styles.menu}>
-                <ul class ={styles.list}>
-                </ul>
+            <div className={styles.menu}>
             </div>
+            <Button class={styleButton.button} href="/menu" size="medium">Voltar</Button>
         </div>
     )
 }

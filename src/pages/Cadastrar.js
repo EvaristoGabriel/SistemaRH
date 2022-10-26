@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom"
-import styles from "../components/layout/Menu.module.css"
+import styles from "../components/layout/Cadastrar.module.css"
+import { Button } from "@mui/material"
+import styleButton from "../components/layout/StyleButton.module.css"
 
-function Cadastrar(){
+function Cadastrar() {
     return (
         <div className="App">
             <header className="App-header">
-                Cadastro 
+                Cadastro
             </header>
             <br></br>
-            <div class={styles.menu}>
-                <ul class ={styles.list}>
-                </ul>
+            <div className={styles.menu}>
+            <Button class={styleButton.button} href="/menu" size="medium">Voltar</Button>
             </div>
         </div>
     )

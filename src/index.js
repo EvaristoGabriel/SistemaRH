@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import styles from './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Cabecalho from '../src/pages/Cabecalho'
+import { ThemeProvider } from '@mui/material';
+import tema from './theme/theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ThemeProvider theme={tema}>
+    <React.StrictMode>
+      <Cabecalho/>    
+      <App />
+    </React.StrictMode>
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

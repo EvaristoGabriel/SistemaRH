@@ -1,44 +1,47 @@
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import styles from "../components/layout/Menu.module.css"
 import Cadastrar from './Cadastrar';
+import styleButton from "../components/layout/StyleButton.module.css"
+import { Button } from "@mui/material"
 
-function Menu(){
+function Menu() {
     return (
         <menu className="App">
             <header className="App-header">
-                MENU 
+                MENU
             </header>
             <br></br>
-            <div class={styles.menu}>
-                <ul class ={styles.list}>
-                    <li class={styles.item}>
+            <div className={styles.menu}>
+                <ul className={styles.list}>
+                    <li className={styles.item}>
                         <Link to="/cadastrar"> Cadastrar Funcionário</Link>
-                        <div class={styles.retangulo}></div>
+                        <div className={styles.retangulo}></div>
                     </li>
-                    <li class={styles.item}>
-                        <Link to="/excluir"> Excluir Funcionário</Link>
-                        <div class={styles.retangulo}></div>
+                    <li className={styles.item}>
+                        <Link to="/buscar"> Excluir Funcionário</Link>
+                        <div className={styles.retangulo}></div>
                     </li>
-                    <li class={styles.item}>
-                        <Link to="/editar"> Editar Funcionário</Link>
-                        <div class={styles.retangulo}></div>
+                    <li className={styles.item}>
+                        <Link to="/buscar" params={{link: "editar"}}> Editar Funcionário</Link>
+                        <div className={styles.retangulo}></div>
                     </li>
-                    <li class={styles.item}>
+                    <li className={styles.item}>
                         <Link to="/buscar"> Buscar Funcionário</Link>
-                        <div class={styles.retangulo}></div>
+                        <div className={styles.retangulo}></div>
                     </li>
-                    <li class={styles.item}>
-                        <Link to="/analisar"> Analisar Folga</Link>
-                        <div class={styles.retangulo}></div>
+                    <li className={styles.item}>
+                        <Link to="/buscar"> Analisar Folga</Link>
+                        <div className={styles.retangulo}></div>
                     </li>
-                    <li class={styles.item}>
+                    <li className={styles.item}>
                         <Link to="/relatorio"> Gerar Relatório</Link>
-                        <div class={styles.retangulo}></div>
+                        <div className={styles.retangulo}></div>
                     </li>
                 </ul>
             </div>
+            <Button class={styleButton.button} href="/" size="medium">Sair</Button>
             <Routes>
-                <Route path="/cadastrar" element={<Cadastrar/>}/>
+                <Route path="/cadastrar" element={<Cadastrar />} />
             </Routes>
         </menu>
     )

@@ -1,0 +1,74 @@
+.form {
+    box-sizing: border-box;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    /* margin: 0;
+    padding: 0;
+    margin-bottom: 1.25em;
+    padding: .125em; */
+}
+
+.label {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    padding-left: 34%;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.ul {
+    column-count: 2;
+    column-gap: 2rem;
+    list-style: none;
+}
+
+ul.checkbox li {
+    border: 1px transparent solid;
+    display: inline-block;
+    width: 12em;
+}
+
+.h2 {
+    padding-left: 40%;
+    margin-top: -10px;
+}
+
+.input {
+    position: absolute;
+    transform: scale(0);
+}
+
+.input:checked~.checkbox {
+    transform: rotate(45deg);
+    width: 20px;
+    margin-left: 16px;
+    border-color: red;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.text {
+    font-size: 30px;
+    padding-left: 60px;
+    width: 300px;
+    margin-top: -0.001px;
+}
+
+/* .checkbox {
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    transition: all 0.37s;
+} */
+
