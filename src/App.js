@@ -8,6 +8,7 @@ import Excluir from './pages/Excluir';
 import Buscar from './pages/Buscar';
 import Analisar from './pages/Analisar';
 import Relatorio from './pages/Relatorio';
+import Pesquisa from './pages/Pesquisa';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/buscar" element={<Buscar/>}/>
         <Route path="/analisar" element={<Analisar/>}/>
         <Route path="/relatorio" element={<Relatorio/>}/>
+        <Route path="/pesquisa" element={<Pesquisa/>}/>
       </Routes>
     </Router>
   );

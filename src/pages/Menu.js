@@ -6,7 +6,6 @@ import { Button } from "@mui/material"
 
 
 function Menu() {
-   
     return (
         <menu className="App">
             <header className="App-header">
