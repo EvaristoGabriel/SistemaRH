@@ -5,20 +5,20 @@ import styleButton from "../components/layout/StyleButton.module.css"
 import styleBotaoCheck from "../components/layout/BotaoCheck.module.css"
 import { useLocation } from "react-router-dom"
 
-function Pesquisar(param) {
+function Pesquisar() {
     const location = useLocation();
-    console.log(location)
-    const opcao = location.state;
+    const vec = location.state;
+    const opcao = location.state[0];
+    console.log(opcao)
+    vec.shift();
 
-    // const {param}= useParams();
-    console.log(param)
     return (
         <buscar className="App">
             <header className="App-header">
                 Pesquisar
             </header>
             <br></br>
-
+            {vec.map(({}))}
             
             {opcao == "excluir" && <button className={styleButton.button}>Pesquisar</button>}
             {opcao == "editar" && <button className={styleButton.button}>Pesquisar</button>}
