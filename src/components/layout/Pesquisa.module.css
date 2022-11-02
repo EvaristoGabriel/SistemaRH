@@ -7,7 +7,7 @@ ul {
     height: 100%;
 }
 
-form {
+.form {
     overflow: hidden;
     position: relative;
     width: 80%;
@@ -19,7 +19,7 @@ form {
     padding: 1em 0em 5em 47%;
 }
 
-.h3 {
+.h1 {
     height: 5px;
     font-size: 20px;
 }
@@ -66,7 +66,7 @@ label::after {
     bottom: -1px;
     width: 530px;
     height: 100%;
-    border-bottom: 3px solid #e0138c;
+    border-bottom: 3px solid #009688;
     transform: translateX(-100%);
     transition: all 0.3s ease;
 }
@@ -76,7 +76,7 @@ input:valid+label span {
     transform: translateY(-150%);
     font-size: 14px;
     bottom: 10px;
-    /* color: #e0138c; */
+    color: #009688;
 }
 
 input:focus+label::after,

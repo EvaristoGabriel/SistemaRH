@@ -1,5 +1,79 @@
+body,
+ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .menu{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0em 5em 47%;
+}
+
+form {
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+}
+
+.input {
+    height: 25px;
+    width: 520px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 28px;
+    padding: 20px 5px 5px;
+    margin-bottom: 10px;
+    margin-left: 45%;
+}
+
+.label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    margin-bottom: 10px;
+    margin-left: 45%;
+}
+
+.span {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 28px;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+}
+
+label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 530px;
+    height: 100%;
+    border-bottom: 3px solid #009688;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+input:focus+label span,
+input:valid+label span {
+    transform: translateY(-150%);
+    font-size: 14px;
+    bottom: 10px;
+    color: #009688;
+}
+
+input:focus+label::after,
+input:valid+label::after {
+    transform: translateX(0%);
 }
