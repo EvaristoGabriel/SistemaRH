@@ -1,0 +1,98 @@
+body,
+ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+}
+
+.menu {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0em 5em 47%;
+}
+
+.h3 {
+    height: 5px;
+    font-size: 20px;
+}
+
+.botoes {
+    margin-top: -10px;
+    padding-left: 10%;
+    padding-bottom: 20px;
+}
+
+
+.input {
+    height: 25px;
+    width: 520px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 28px;
+    padding: 20px 5px 5px;
+    margin-bottom: 10px;
+}
+
+.label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    margin-bottom: 10px;
+}
+
+.span {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 530px;
+    height: 100%;
+    border-bottom: 3px solid #e0138c;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+input:focus+label span,
+input:valid+label span {
+    transform: translateY(-150%);
+    font-size: 14px;
+    bottom: 10px;
+    /* color: #e0138c; */
+}
+
+input:focus+label::after,
+input:valid+label::after {
+    transform: translateX(0%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

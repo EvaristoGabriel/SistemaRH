@@ -6,7 +6,7 @@ import styleBotaoCheck from "../components/layout/BotaoCheck.module.css"
 
 function Relatorio() {
     return (
-        <relatorio className="App">
+        <div className="App">
             <header className="App-header">
                 Relatório
             </header>
@@ -56,9 +56,9 @@ function Relatorio() {
                     <p className={styles.text}>Tudo</p>
                 </label> <br></br>
             </div>
-            <button class={styleButton.button}>Gerar Relatório</button>
+            <button className={styleButton.button}>Gerar Relatório</button>
             <Button class={styleButton.button} href="/menu" size="medium">Voltar</Button>
-        </relatorio>
+        </div>
     )
 }
 

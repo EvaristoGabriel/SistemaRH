@@ -4,8 +4,7 @@ import { Button } from "@mui/material"
 import styleButton from "../components/layout/StyleButton.module.css"
 import styleBotaoCheck from "../components/layout/BotaoCheck.module.css"
 import { useLocation } from "react-router-dom"
-import React, { useRef, useState } from "react";
-
+import React, { useEffect, useRef, useState } from "react";
 
 function Buscar() {
     const location = useLocation();
@@ -15,22 +14,18 @@ function Buscar() {
     const [userinfo, setUserInfo] = useState({
         languages: [],
         response: [],
-      });
+    });
 
     const handleChange = (e) => {
         const { value, checked } = e.target;
         const { languages } = userinfo;
-          
-        console.log(`${value} is ${checked}`);
-        // Case 1 : The user checks the box
+
         if (checked) {
             setUserInfo({
                 languages: [...languages, value],
                 response: [...languages, value],
             });
         }
-        
-        // Case 2  : The user unchecks the box
         else {
             setUserInfo({
                 languages: languages.filter((e) => e !== value),
@@ -42,7 +37,7 @@ function Buscar() {
     console.log(selecionados);
 
     return (
-        <buscar className="App">
+        <div className="App">
             <header className="App-header">
                 Buscar
             </header>
@@ -52,60 +47,60 @@ function Buscar() {
             </h2>
             <div className={styles.menu}>
                 <label className={styles.label}>
-                    <input className={styleBotaoCheck.input} type="checkbox" name = "check" value = "nome"
-                    onChange={handleChange}></input>
+                    <input className={styleBotaoCheck.input} type="checkbox" name="check" value="Nome"
+                        onChange={handleChange}></input>
                     <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Nome</p>
                 </label> <br></br>
                 <label className={styles.label}>
-                    <input className={styleBotaoCheck.input} type="checkbox" name = "check" value = "cpf"
-                    onChange={handleChange}></input>
+                    <input className={styleBotaoCheck.input} type="checkbox" name="check" value="Cpf"
+                        onChange={handleChange}></input>
                     <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>CPF</p>
                 </label><br></br>
                 <label className={styles.label}>
-                    <input className={styleBotaoCheck.input} type="checkbox" name = "check" value = "cargo"
-                    onChange={handleChange}></input>
+                    <input className={styleBotaoCheck.input} type="checkbox" name="check" value="Cargo"
+                        onChange={handleChange}></input>
                     <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Cargo</p>
                 </label><br></br>
                 <label className={styles.label}>
-                    <input className={styleBotaoCheck.input} type="checkbox" name = "check" value = "salario"
-                    onChange={handleChange}></input>
+                    <input className={styleBotaoCheck.input} type="checkbox" name="check" value="Salario"
+                        onChange={handleChange}></input>
                     <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Salário</p>
                 </label><br></br>
                 <label className={styles.label}>
-                    <input className={styleBotaoCheck.input} type="checkbox" name = "check" value = "sexo"
-                    onChange={handleChange}></input>
+                    <input className={styleBotaoCheck.input} type="checkbox" name="check" value="Sexo"
+                        onChange={handleChange}></input>
                     <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Sexo</p>
                 </label><br></br>
                 <label className={styles.label}>
-                    <input className={styleBotaoCheck.input} type="checkbox" name = "check" value = "email"
-                    onChange={handleChange}></input>
+                    <input className={styleBotaoCheck.input} type="checkbox" name="check" value="Email"
+                        onChange={handleChange}></input>
                     <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>E-mail</p>
                 </label> <br></br>
                 <label className={styles.label}>
-                    <input className={styleBotaoCheck.input} type="checkbox" name = "check" value = "nascimento"
-                    onChange={handleChange}></input>
+                    <input className={styleBotaoCheck.input} type="checkbox" name="check" value="Nascimento"
+                        onChange={handleChange}></input>
                     <span className={styleBotaoCheck.checkbox}></span>
                     <p className={styles.text}>Data de Nascimento</p>
                 </label> <br></br>
                 <label className={styles.label}>
-                    <input className={styleBotaoCheck.input} type="checkbox" name = "check" value = "tudo"
-                    onChange={handleChange}></input>
+                    <input className={styleBotaoCheck.input} type="checkbox" name="check" value="Registro"
+                        onClick={handleChange}></input>
                     <span className={styleBotaoCheck.checkbox}></span>
-                    <p className={styles.text}>Tudo</p>
+                    <p className={styles.text}>Registro</p>
                 </label> <br></br>
             </div>
-            {opcao == "excluir" && <Link to = {"/pesquisa"} state = {selecionados} className={styleButton.button}>Pesquisar</Link>}
-            {opcao == "editar" && <Link to = "/pesquisa" state = {opcao} className={styleButton.button}>Pesquisar</Link>}
-            {opcao == "buscar" && <Link to = "/pesquisa" state = {opcao} className={styleButton.button}>Pesquisar</Link>}
-            {opcao == "analisar" && <Link to = "/pesquisa" state = {opcao} className={styleButton.button}>Pesquisar</Link>}
+            {opcao == "excluir" && <Link to={"/pesquisa"} state={selecionados} className={styleButton.button}>Pesquisar</Link>}
+            {opcao == "editar" && <Link to={"/pesquisa"} state={selecionados} className={styleButton.button}>Pesquisar</Link>}
+            {opcao == "buscar" && <Link to={"/pesquisa"} state={selecionados} className={styleButton.button}>Pesquisar</Link>}
+            {opcao == "analisar" && <Link to={"/pesquisa"} state={selecionados} className={styleButton.button}>Pesquisar</Link>}
             <Button class={styleButton.button} href="/menu" size="medium">Voltar</Button>
-        </buscar>
+        </div>
     )
 }
 

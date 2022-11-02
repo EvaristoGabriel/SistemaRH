@@ -12,6 +12,7 @@
     transition: 100ms;
     text-decoration: none;
     color: black;
+    margin-bottom: 10px;
 }
 
 span, svg {

@@ -9,22 +9,28 @@ import Buscar from './pages/Buscar';
 import Analisar from './pages/Analisar';
 import Relatorio from './pages/Relatorio';
 import Pesquisa from './pages/Pesquisa';
+import Resultado from './pages/Resultado';
+import { ThemeProvider } from '@mui/material';
+import tema from './theme/theme';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Login/>}/>
-        <Route path="/menu" element={<Menu/>}/>
-        <Route path="/cadastrar" element={<Cadastrar/>}/>
-        <Route path="/excluir" element={<Excluir/>}/>
-        <Route path="/editar" element={<Editar/>}/>
-        <Route path="/buscar" element={<Buscar/>}/>
-        <Route path="/analisar" element={<Analisar/>}/>
-        <Route path="/relatorio" element={<Relatorio/>}/>
-        <Route path="/pesquisa" element={<Pesquisa/>}/>
-      </Routes>
-    </Router>
+    <ThemeProvider theme={tema}>
+      <Router>
+        <Routes>
+          <Route exact path="*" element={<Login/>}/>
+          <Route path="/menu/*" element={<Menu/>}/>
+          <Route path="/cadastrar/*" element={<Cadastrar/>}/>
+          <Route path="/excluir/*" element={<Excluir/>}/>
+          <Route path="/editar/*" element={<Editar/>}/>
+          <Route path="/buscar/*" element={<Buscar/>}/>
+          <Route path="/analisar/*" element={<Analisar/>}/>
+          <Route path="/relatorio/*" element={<Relatorio/>}/>
+          <Route path="/pesquisa/*" element={<Pesquisa/>}/>
+          <Route path="/resultado/*" element={<Resultado/>}/>
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 
