@@ -10,9 +10,7 @@ function Cadastrar() {
                 Cadastro
             </header>
             <br></br>
-            <div className={styles.menu}>
-            <Button class={styleButton.button} href="/menu" size="medium">Voltar</Button>
-            </div>
+            <Button class={styleButton.button} href="/menu" size="small">Voltar</Button>
         </div>
     )
 }

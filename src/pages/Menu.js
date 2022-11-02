@@ -3,9 +3,27 @@ import styles from "../components/layout/Menu.module.css"
 import Cadastrar from './Cadastrar';
 import styleButton from "../components/layout/StyleButton.module.css"
 import { Button } from "@mui/material"
-
+import Loading from './Loading';
+import { useState, useEffect } from 'react';
 
 function Menu() {
+    const [removeLoading, setRemoveLoading] = useState(false);
+
+    useEffect(() => {
+        fetch('https://localhost:3000/menu', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then((resp) => resp.json())
+            .then((data) => {
+                console.log(data);
+                setRemoveLoading(true);
+            })
+            .catch((err) => console.log(err))
+    }, [])
+
     return (
         <menu className="App">
             <header className="App-header">
@@ -40,6 +58,7 @@ function Menu() {
                     </li>
                 </ul>
             </div>
+            {!removeLoading && <Loading/>}
             <Button class={styleButton.button} href="/" size="medium">Sair</Button>
             <Routes>
                 <Route path="/cadastrar" element={<Cadastrar />} />
