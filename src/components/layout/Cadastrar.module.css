@@ -8,12 +8,9 @@ ul {
 }
 
 .menu{
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0em 5em 47%;
+    padding: 1em 0em 4px 47%;
 }
 
 form {
@@ -30,7 +27,6 @@ form {
     font-size: 28px;
     padding: 20px 5px 5px;
     margin-bottom: 10px;
-    margin-left: 45%;
 }
 
 .label {
@@ -41,7 +37,6 @@ form {
     height: 100%;
     pointer-events: none;
     margin-bottom: 10px;
-    margin-left: 45%;
 }
 
 .span {
@@ -50,7 +45,6 @@ form {
     left: 5px;
     font-size: 28px;
     transition: all 0.3s ease;
-    margin-left: 5px;
 }
 
 label::after {
