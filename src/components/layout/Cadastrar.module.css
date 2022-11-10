@@ -7,12 +7,73 @@ ul {
     height: 100%;
 }
 
-.menu{
+.h1i,
+.h1e,
+.h1r,
+.h1c,
+.h1t,
+.h1ct,
+.h1p,
+.h1ce,
+.h1pr,
+.h1pe,
+.h1val {
+    color: #009688;
+    font-size: 50px;
+    margin-top: -17px;
+    margin-bottom: 5px;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 2px;
+}
+
+.h1e {
+    margin-left: 10%;
+}
+
+.h1r,
+.h1p {
+    margin-left: 17%;
+}
+
+.h1c {
+    margin-left: 2%;
+}
+
+.h1t {
+    margin-left: 6%;
+}
+
+.h1ct {
+    margin-left: 15%;
+}
+
+.h1ce {
+    margin-left: 7%;
+}
+
+.h1pr {
+    margin-top: 10px;
+    margin-left: 6%;
+}
+.h1val {
+    margin-top: 10px;
+    margin-left: 2%;
+}
+
+.h1pe {
+    margin-top: 10px;
+    /* margin-left: 10%; */
+}
+
+.menu {
     justify-content: space-between;
     align-items: center;
     padding: 1em 0em 4px 47%;
 }
 
+.campos{
+    margin-left: -10%;
+}
 form {
     overflow: hidden;
     position: relative;
@@ -37,6 +98,29 @@ form {
     height: 100%;
     pointer-events: none;
     margin-bottom: 10px;
+}
+
+.labelcheck,
+.labelcheck2 {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    padding-left: 34%;
+    padding-bottom: 10px;
+    float: left;
+    margin-left: -350px;
+}
+
+.labelcheck2 {
+    margin-top: 5px;
+    margin-right: 2000px;
+}
+
+.text {
+    font-size: 30px;
+    padding-left: 60px;
+    width: 300px;
+    margin-top: -0.001px;
 }
 
 .span {

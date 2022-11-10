@@ -4,7 +4,7 @@ import { Button } from "@mui/material"
 import styleButton from "../components/layout/StyleButton.module.css"
 import styleBotaoCheck from "../components/layout/BotaoCheck.module.css"
 import { useLocation } from "react-router-dom"
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 
 function Buscar() {
     const location = useLocation();

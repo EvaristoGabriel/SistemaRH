@@ -56,7 +56,7 @@ function Relatorio() {
                     <p className={styles.text}>Tudo</p>
                 </label> <br></br>
             </div>
-            <button className={styleButton.button}>Gerar Relatório</button>
+            <Link to="/gerado" className={styleButton.button}>Gerar Relatório</Link>
             <Button class={styleButton.button} href="/menu" size="medium">Voltar</Button>
         </div>
     )

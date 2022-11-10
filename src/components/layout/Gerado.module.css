@@ -1,0 +1,17 @@
+body,
+ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0em 4px 47%;
+}
+
+.h2{
+
+}
