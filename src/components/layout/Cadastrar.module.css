@@ -108,7 +108,7 @@ form {
     padding-left: 34%;
     padding-bottom: 10px;
     float: left;
-    margin-left: -350px;
+    margin-left: -150px;
 }
 
 .labelcheck2 {
@@ -154,4 +154,10 @@ input:valid+label span {
 input:focus+label::after,
 input:valid+label::after {
     transform: translateX(0%);
+}
+
+@media(max-width:2000){
+    .labelcheck, .labelcheck2{
+        margin-left: auto;
+    }
 }
