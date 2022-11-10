@@ -76,7 +76,7 @@ function cadastro(valor, id, userinfo, setUserInfo, dependentes, setDependentes,
                             <span className={styleBotaoCheck.checkbox}></span>
                             <p className={styles.text}>Não</p>
                         </label> <br></br><br></br><br></br><br></br><br></br><br></br>
-                        {primeiro == "Sim" && <div>
+                        {primeiro == "Não" && <div>
                             <form key={valor}>
                                 <input name="name" autoComplete="off" required className={styles.input} />
                                 <label className={styles.label} htmlFor="name">
