@@ -4,93 +4,92 @@ import { Button } from "@mui/material"
 import styleButton from "../components/layout/StyleButton.module.css"
 import { useLocation } from "react-router-dom"
 
-function renderCondition(valor){
-    if (valor === "Nome"){
-        return (
-            <form key="nome">
-                <input name="name" autoComplete="off" required className = {styles.input}/>
-                <label className = {styles.label} htmlFor="name"> 
-                    <span className = {styles.span}>{valor}</span>
-                </label>
-            </form>
-        )
-    }
-    if (valor === "Cpf"){
-        return (
-            <form key="cpf">
-                <input name="name" autoComplete="off" required className = {styles.input}/>
-                <label className = {styles.label} htmlFor="name"> 
-                    <span className = {styles.span}>{valor}</span>
-                </label>
-            </form>
-        )
-    }
-    if (valor === "Cargo"){
-        return (
-            <form key="cargo">
-                <input name="name" autoComplete="off" required className = {styles.input}/>
-                <label className = {styles.label} htmlFor="name"> 
-                    <span className = {styles.span}>{valor}</span>
-                </label>
-            </form>
-        )
-    }
-    if (valor === "Salario"){
-        return (
-            <form key="salario">
-                <input name="name" autoComplete="off" required className = {styles.input}/>
-                <label className = {styles.label} htmlFor="name"> 
-                    <span className = {styles.span}>{valor}</span>
-                </label>
-            </form>
-        )
-    }
-    if (valor === "Email"){
-        return (
-            <form key="email">
-                <input name="name" autoComplete="off" required className = {styles.input}/>
-                <label className = {styles.label} htmlFor="name"> 
-                    <span className = {styles.span}>{valor}</span>
-                </label>
-            </form>
-        )
-    }
-    if (valor === "Sexo"){
-        return (
-            <form key="sexo">
-                <input name="name" autoComplete="off" required className = {styles.input}/>
-                <label className = {styles.label} htmlFor="name"> 
-                    <span className = {styles.span}>{valor}</span>
-                </label>
-            </form>
-        )
-    }
-    if (valor === "Nascimento"){
-        return (
-            <form key="nascimento">
-                <input name="name" autoComplete="off" required className = {styles.input}/>
-                <label className = {styles.label} htmlFor="name"> 
-                    <span className = {styles.span}>{valor}</span>
-                </label>
-            </form>
-        )
-    }
-    if (valor === "Registro"){
-        return (
-            <form key="registro">
-                <input name="name" autoComplete="off" required className = {styles.input}/>
-                <label className = {styles.label} htmlFor="name"> 
-                    <span className = {styles.span}>{valor}</span>
-                </label>
-            </form>
-        )
-    }
-}
+// function renderCondition(valor) {
+//     if (valor === "Nome") {
+//         return (
+//             <form key="nome">
+//                 <input name="name" autoComplete="off" required className={styles.input} />
+//                 <label className={styles.label} htmlFor="name">
+//                     <span className={styles.span}>{valor}</span>
+//                 </label>
+//             </form>
+//         )
+//     }
+//     if (valor === "Cpf") {
+//         return (
+//             <form key="cpf">
+//                 <input name="name" autoComplete="off" required className={styles.input} />
+//                 <label className={styles.label} htmlFor="name">
+//                     <span className={styles.span}>{valor}</span>
+//                 </label>
+//             </form>
+//         )
+//     }
+//     if (valor === "Cargo") {
+//         return (
+//             <form key="cargo">
+//                 <input name="name" autoComplete="off" required className={styles.input} />
+//                 <label className={styles.label} htmlFor="name">
+//                     <span className={styles.span}>{valor}</span>
+//                 </label>
+//             </form>
+//         )
+//     }
+//     if (valor === "Salario") {
+//         return (
+//             <form key="salario">
+//                 <input name="name" autoComplete="off" required className={styles.input} />
+//                 <label className={styles.label} htmlFor="name">
+//                     <span className={styles.span}>{valor}</span>
+//                 </label>
+//             </form>
+//         )
+//     }
+//     if (valor === "Email") {
+//         return (
+//             <form key="email">
+//                 <input name="name" autoComplete="off" required className={styles.input} />
+//                 <label className={styles.label} htmlFor="name">
+//                     <span className={styles.span}>{valor}</span>
+//                 </label>
+//             </form>
+//         )
+//     }
+//     if (valor === "Sexo") {
+//         return (
+//             <form key="sexo">
+//                 <input name="name" autoComplete="off" required className={styles.input} />
+//                 <label className={styles.label} htmlFor="name">
+//                     <span className={styles.span}>{valor}</span>
+//                 </label>
+//             </form>
+//         )
+//     }
+//     if (valor === "Nascimento") {
+//         return (
+//             <form key="nascimento">
+//                 <input name="name" autoComplete="off" required className={styles.input} />
+//                 <label className={styles.label} htmlFor="name">
+//                     <span className={styles.span}>{valor}</span>
+//                 </label>
+//             </form>
+//         )
+//     }
+//     if (valor === "Registro") {
+//         return (
+//             <form key="registro">
+//                 <input name="name" autoComplete="off" required className={styles.input} />
+//                 <label className={styles.label} htmlFor="name">
+//                     <span className={styles.span}>{valor}</span>
+//                 </label>
+//             </form>
+//         )
+//     }
+// }
 
 function Pesquisar() {
     const location = useLocation();
     const opcao = location.state[0];
-    const vec = location.state;
     console.log(location)
 
     return (
@@ -100,10 +99,18 @@ function Pesquisar() {
             </header>
             <br></br>
             <div className={styles.menu}>
-                {vec.map((valor) => 
-                        renderCondition(valor)
-                    )
-                }
+                <form key="nome">
+                    <input name="name" autoComplete="off" required className={styles.input} />
+                    <label className={styles.label} htmlFor="name">
+                        <span className={styles.span}>NOME</span>
+                    </label>
+                </form>
+                <form key="cpf">
+                    <input name="name" autoComplete="off" required className={styles.input} />
+                    <label className={styles.label} htmlFor="name">
+                        <span className={styles.span}>CPF</span>
+                    </label>
+                </form>
             </div>
 
             {opcao === "excluir" && <div className={styles.botoes}><Link to="/resultado" state={opcao} className={styleButton.button}>Pesquisar</Link></div>}

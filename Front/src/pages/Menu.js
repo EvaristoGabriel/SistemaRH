@@ -18,19 +18,19 @@ function Menu() {
                         <div className={styles.retangulo}></div>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/buscar" state={"excluir"}> Excluir Funcionário</Link>
+                        <Link to="/Pesquisa" state={"excluir"}> Excluir Funcionário</Link>
                         <div className={styles.retangulo}></div>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/buscar" state={"editar"}> Editar Funcionário</Link>
+                        <Link to="/Pesquisa" state={"editar"}> Editar Funcionário</Link>
                         <div className={styles.retangulo}></div>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/buscar" state={"buscar"}> Buscar Funcionário</Link>
+                        <Link to="/Pesquisa" state={"buscar"}> Buscar Funcionário</Link>
                         <div className={styles.retangulo}></div>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/buscar" state={"analisar"}> Analisar Folga</Link>
+                        <Link to="/Pesquisa" state={"analisar"}> Analisar Folga</Link>
                         <div className={styles.retangulo}></div>
                     </li>
                     <li className={styles.item}>
