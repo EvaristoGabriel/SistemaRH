@@ -10,6 +10,7 @@ body, ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     padding: 1em;
 }
 
@@ -49,3 +50,4 @@ body, ul {
     border: solid 2px #F5F5F5;
     box-shadow: 13px 6px 10px 1px rgb(59, 59, 59);
 }
+

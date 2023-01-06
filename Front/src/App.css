@@ -12,11 +12,9 @@ body {
   color: black;
 }
 
-@media(max-width:2000px){
+@media(max-width:1000px){
   section{
-    width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    
+    width: 500px;
+    margin-right: 0 auto;
   }
 }
