@@ -1,12 +1,3 @@
-body,
-ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .h1i,
 .h1e,
 .h1r,
@@ -55,6 +46,7 @@ ul {
     margin-top: 10px;
     margin-left: 6%;
 }
+
 .h1val {
     margin-top: 10px;
     margin-left: 2%;
@@ -65,19 +57,18 @@ ul {
     /* margin-left: 10%; */
 }
 
-.menu {
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 0em 4px 47%;
+.campos {
+    padding: 1em 0em 4px 30%;
+    display: flex;
+    flex-direction: column;
 }
 
-.campos{
-    margin-left: -10%;
-}
-form {
+.form {
     overflow: hidden;
     position: relative;
-    width: 80%;
+    width: 100%;
+    text-align: center;
+    margin-left: -25%;
 }
 
 .input {
@@ -87,77 +78,45 @@ form {
     border-radius: 4px;
     font-size: 28px;
     padding: 20px 5px 5px;
-    margin-bottom: 10px;
+    margin:10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s all;
 }
 
-.label {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    margin-bottom: 10px;
+.input:hover {
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
-.labelcheck,
-.labelcheck2 {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    padding-left: 34%;
-    padding-bottom: 10px;
-    float: left;
-    margin-left: -150px;
-}
-
-.labelcheck2 {
-    margin-top: 5px;
-    margin-right: 2000px;
-}
-
-.text {
+.text, .textlongo, .textlongor {
     font-size: 30px;
     padding-left: 60px;
-    width: 300px;
     margin-top: -0.001px;
+    margin-bottom: -7px;
+    margin-left: 70px;
 }
 
-.span {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    font-size: 28px;
-    transition: all 0.3s ease;
+.textlongo {
+    font-size: 30px;
+    margin-top: -0.001px;
+    margin-bottom: -7px;
+    margin-left: 14.4%;
+    align-items: left;
 }
 
-label::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 530px;
-    height: 100%;
-    border-bottom: 3px solid white;
-    transform: translateX(-100%);
-    transition: all 0.3s ease;
+.textlongor {
+    font-size: 30px;
+    margin-top: -0.001px;
+    margin-bottom: -7px;
+    margin-left: 11.4%;
+    align-items: left;
 }
 
-input:focus+label span,
-input:valid+label span {
-    transform: translateY(-150%);
-    font-size: 14px;
-    bottom: 10px;
-    color: white;
-}
 
-input:focus+label::after,
-input:valid+label::after {
-    transform: translateX(0%);
-}
+@media(max-width:2000) {
 
-@media(max-width:2000){
-    .labelcheck, .labelcheck2{
+    .labelcheck,
+    .labelcheck2 {
         margin-left: auto;
     }
 }

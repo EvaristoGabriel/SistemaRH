@@ -13,11 +13,11 @@ code {
 }
 
 .App-logo, img {
-  height: 50px;
+  height: 70px;
   position: absolute;
   right: 0;
   top: 0;
-  border:none;
+  border: none;
   padding:0;
-  margin:0
+  margin: 0;
 }
