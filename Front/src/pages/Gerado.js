@@ -6,11 +6,11 @@ function Gerado() {
     return (
         <div className="App">
             <br></br>
-            <header className="App-header">
-                Relatorio gerado com Sucesso
-            </header>
 
             <div className={styles.menu}>
+            <header className={styles.titulo}>
+                Relatorio gerado com Sucesso
+            </header>
             <h2 className={styles.h2}>Foi gerado um Arquivo chamado 
                 Relatorio.txt
             </h2>
